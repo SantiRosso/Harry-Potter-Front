@@ -1,0 +1,27 @@
+<p>characters works!</p>
+<div *ngIf="character">
+    <h1>{{ character.name }}</h1>
+    <h1>House: {{ character.house }}</h1>
+    <h1>Age: {{ character.age }}</h1>
+    <h1>Alive: {{ character.alive ? 'YES' : 'NO' }}</h1>
+    <!-- <img [src]="character.images[0]" alt=""> -->
+    <!-- <img src={{character.images[0]}} alt=""> -->
+</div>
+<div *ngIf="!character">
+    character not found
+</div>
+
+<!-- otra opción para no generar anidación -->
+
+<!-- <p>characters works!</p> -->
+<!-- <ng-template *ngIf="character">
+    <h1>{{ character.name }}</h1>
+    <h1>House: {{ character.house }}</h1>
+    <h1>Age: {{ character.age }}</h1>
+    <h1>Alive: {{ character.alive ? 'YES' : 'NO' }}</h1> -->
+    <!-- <img [src]="character.images[0]" alt=""> -->
+    <!-- <img src={{character.images[0]}} alt=""> -->
+<!-- </ng-template>
+<ng-template *ngIf="!character">
+    character not found
+</ng-template> -->
